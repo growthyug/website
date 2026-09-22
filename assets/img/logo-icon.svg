@@ -1,0 +1,17 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#8CC152"/>
+<stop offset="50%" stop-color="#2C8A8C"/>
+<stop offset="100%" stop-color="#0B2545"/>
+</linearGradient>
+</defs>
+<path d="M 83.14,64.07 A 36,36 0 1 1 83.14,35.93" fill="none" stroke="url(#brandGrad)" stroke-width="9" stroke-linecap="round"/>
+<rect x="33" y="53" width="8" height="17" rx="1.5" fill="url(#brandGrad)"/>
+<rect x="45.5" y="43" width="8" height="27" rx="1.5" fill="url(#brandGrad)"/>
+<rect x="58" y="33" width="8" height="37" rx="1.5" fill="url(#brandGrad)"/>
+<path d="M 27,67 L 45,51 L 55,59 L 71,36" fill="none" stroke="url(#brandGrad)" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="65,25 82,27 75,42" fill="url(#brandGrad)"/>
+<circle cx="41" cy="78" r="3.2" fill="url(#brandGrad)"/>
+<circle cx="55" cy="78" r="3.2" fill="url(#brandGrad)"/>
+</svg>
