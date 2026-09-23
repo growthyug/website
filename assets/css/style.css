@@ -57,13 +57,14 @@ nav.site-nav {
 }
 nav.site-nav.scrolled { background: rgba(2,4,8,0.94); }
 .nav-inner { max-width: 1280px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
-@media (min-width: 768px) { .nav-inner { padding: 0 40px; } }
-.logo { font-family: 'Poppins', sans-serif; font-size: 1.2rem; font-weight: 900; text-decoration: none;
-  display: inline-flex; align-items: center; gap: 10px;
-  background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: 1.5px; }
-.logo-icon { display: block; flex-shrink: 0; }
-.logo-stack { display: flex; flex-direction: column; line-height: 1.15; }
-.logo-tag { font-size: 0.58rem; color: var(--neon-cyan); letter-spacing: 3px; -webkit-text-fill-color: var(--neon-cyan); margin-top: 3px; }
+.logo { font-family: 'Poppins', sans-serif; font-size: 1.35rem; font-weight: 800; text-decoration: none;
+  display: inline-flex; align-items: center; gap: 10px; color: #ffffff; letter-spacing: -0.3px; }
+.logo:hover { color: #ffffff; }
+.logo-icon { display: block; flex-shrink: 0; width: 32px; height: 32px; filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.35)); }
+.logo-text { font-family: 'Poppins', sans-serif; font-size: 1.35rem; font-weight: 800; color: #ffffff; letter-spacing: -0.3px; }
+.logo-accent { color: var(--neon-cyan); }
+.footer-logo { font-family: 'Poppins', sans-serif; font-size: 1.25rem; font-weight: 800; display: inline-flex; align-items: center; gap: 10px; color: #ffffff; }
+.footer-logo .logo-icon { width: 28px; height: 28px; }
 
 .nav-links { display: none; list-style: none; gap: 28px; align-items: center; }
 .nav-links > li { position: relative; padding: 10px 0; }
