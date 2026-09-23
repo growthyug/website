@@ -185,10 +185,12 @@ p { line-height: 1.7; color: var(--text-secondary); }
 .marquee-track { display: flex; animation: marquee 22s linear infinite; white-space: nowrap; width: max-content; }
 @media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; } }
 @keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
-.platform-logo { display: inline-flex; align-items: center; padding: 14px 32px; border: 1px solid var(--glass-border); margin-right: 14px; background: var(--glass-bg); flex-shrink: 0;
+.platform-logo { display: inline-flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; padding: 18px 30px; border: 1px solid var(--glass-border); margin-right: 14px; background: var(--glass-bg); flex-shrink: 0;
   clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%); }
-.platform-logo img { height: 22px; width: auto; max-width: 120px; display: block; }
-.platform-logo img.platform-logo-square { height: 36px; }
+.platform-logo img { height: 28px; width: auto; max-width: 120px; display: block; }
+.platform-logo img.platform-logo-square { height: 40px; }
+.platform-logo img.platform-logo-boost { height: 38px; }
+.platform-logo span { font-family: 'Poppins', sans-serif; font-size: 0.68rem; font-weight: 600; letter-spacing: 1.5px; color: var(--text-secondary); text-transform: uppercase; white-space: nowrap; }
 
 /* ── CTA BAND ── */
 .cta-band { position: relative; overflow: hidden; text-align: center; }
