@@ -1,4 +1,4 @@
-# MASTER GROWTHYUG ROADMAP
+﻿# MASTER GROWTHYUG ROADMAP
 **Last Updated:** 2026-09-24  
 **Version:** 1.0 — Post Audit  
 
@@ -24,7 +24,7 @@ Based on the full codebase and live site audit:
 ### 🔴 Critical Gaps
 1. **Zero social proof** — No client logos, no testimonials, no case studies (/case-studies/ is 404)
 2. **Anonymous agency** — No founder name, no team on About page
-3. **Gmail address** — growthyug@gmail.com used everywhere — credibility risk
+3. **Gmail address** — hello@growthyug.in used everywhere — credibility risk
 4. **BreadcrumbList schema bug** — Wrong item URLs on every inner page
 5. **GTM not in source files** — Will be lost on next deployment
 6. **No OG image** — Social shares show blank previews
@@ -332,3 +332,4 @@ GrowthYug is ready for aggressive client acquisition when:
 ---
 
 *This roadmap will be updated after each phase completion.*
+

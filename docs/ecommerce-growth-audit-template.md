@@ -1,4 +1,4 @@
-# GrowthYug — 30-Minute Ecommerce Growth Audit & Pitch Playbook
+﻿# GrowthYug — 30-Minute Ecommerce Growth Audit & Pitch Playbook
 
 **Target Audience:** D2C Founders, Ecommerce Directors, Marketplace Heads generating ₹5L/mo to ₹1Cr/mo.  
 **Objective:** Convert discovery calls into high-ticket growth retainers (₹75,000 to ₹2,50,000/month).
@@ -92,3 +92,4 @@ Close with a zero-friction next step:
 
 1. Send access request links (Shopify Collaborator Code, Meta Business Manager Partner ID, Amazon Child User permissions).
 2. Schedule the 45-minute Strategy Kickoff Call.
+

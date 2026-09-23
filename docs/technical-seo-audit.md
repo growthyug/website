@@ -1,4 +1,4 @@
-# GrowthYug — Technical SEO Audit
+﻿# GrowthYug — Technical SEO Audit
 **Date:** 2026-09-24  
 **Source:** Full local codebase audit (`c:\Growthyug\website`) + live HTTP inspection  
 **Stack:** Static HTML site, deployed via GitHub Pages (CNAME: growthyug.in)
@@ -134,7 +134,7 @@ Sitemap: https://www.growthyug.in/sitemap.xml
   "name": "Growthyug",
   "url": "https://www.growthyug.in/",
   "telephone": "+91-9329441079",
-  "email": "growthyug@gmail.com",
+  "email": "hello@growthyug.in",
   "address": { "addressLocality": "Indore", "addressRegion": "Madhya Pradesh" },
   "areaServed": "IN"
 }
@@ -346,3 +346,4 @@ Sitemap: https://www.growthyug.in/sitemap.xml
 ---
 
 *Technical SEO audit complete. All findings are based on direct inspection of local source files and live HTTP responses.*
+

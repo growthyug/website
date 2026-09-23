@@ -1,4 +1,4 @@
-# GrowthYug — Client Onboarding Standard Operating Procedure (SOP)
+﻿# GrowthYug — Client Onboarding Standard Operating Procedure (SOP)
 
 **Objective:** Onboard new ecommerce & D2C clients within 72 hours with zero friction, establish unified communication channels, verify tracking instrumentation, and launch the first 30-day execution sprint.
 
@@ -36,7 +36,7 @@ Send the client our standardized partner access instructions:
 | **Shopify Store** | Send Collaborator Request via Shopify Partner Dashboard | Themes, Products, Analytics, Apps, Settings |
 | **Meta Business Manager** | Request Partner Access to Pixel, Ad Account, and Catalog (`GrowthYug BM ID`) | Manage Campaigns, View Insights |
 | **Google Ads** | Send Link Request from GrowthYug MCC Account | Standard / Administrative |
-| **Google Analytics 4 & GTM** | Add `growthyug@gmail.com` as Administrator | Full Edit & Publish Permissions |
+| **Google Analytics 4 & GTM** | Add `hello@growthyug.in` as Administrator | Full Edit & Publish Permissions |
 | **Amazon Seller Central** | Invite User via Settings > User Permissions | Advertising, Catalog, Inventory, Reports |
 | **Flipkart Seller Hub** | User Management > Add Sub-User | Advertising & Catalog Manager |
 | **Klaviyo / WhatsApp CRM** | Settings > Users > Add Account Member | Manager / Admin |
@@ -76,3 +76,4 @@ Before spending ₹1 in ad budget or altering listings, the technical lead must 
 [25–35 min] → Presentation of Month 1 Creative Testing & Channel Roadmap
 [35–45 min] → Deliverables Sign-off & First Week Action Items
 ```
+

@@ -1,4 +1,4 @@
-# GrowthYug — WhatsApp Outbound SOP
+﻿# GrowthYug — WhatsApp Outbound SOP
 **Version:** 1.0  
 **Date:** 2026-09-24
 
@@ -239,3 +239,4 @@ For every outbound prospect, log in CRM:
 ---
 
 *This SOP should be reviewed and updated monthly based on response rates.*
+

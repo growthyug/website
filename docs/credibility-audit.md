@@ -1,4 +1,4 @@
-# GrowthYug — Credibility Audit
+﻿# GrowthYug — Credibility Audit
 **Date:** 2026-09-24  
 **Auditor:** Strategic Audit  
 **Scope:** Current live website (growthyug.in) + known older indexed claims
@@ -46,7 +46,7 @@ These claims were cited in the brief. Cross-referenced against current live code
 | 14 | "Ecommerce-only focus — not a generalist digital agency" | index.html + about | ✅ KEEP — verifiable by service architecture | Keep + reinforce consistently |
 | 15 | "Case studies and results should use real numbers — nothing fabricated" | about/index.html | ✅ KEEP — integrity statement | Keep — this must be honored by only publishing verified proof |
 | 16 | Phone: +91 93294 41079 | All pages, schema | ✅ KEEP | Verify it is active with professional voicemail |
-| 17 | Email: growthyug@gmail.com | All pages, schema, form | ⚠️ **FLAG** | **REWRITE** — Gmail for a professional agency is a credibility risk with mid/high-ticket clients. Upgrade to hello@growthyug.in |
+| 17 | Email: hello@growthyug.in | All pages, schema, form | ⚠️ **FLAG** | **REWRITE** — Gmail for a professional agency is a credibility risk with mid/high-ticket clients. Upgrade to hello@growthyug.in |
 | 18 | Address: C-323, Silver Spring Phase 1, Indore MP 452020 | All pages, schema | ✅ KEEP | Set up Google Business Profile at this address |
 | 19 | Schema: `"areaServed":"IN"` | index.html schema | ⚠️ **FLAG** — limits scope to India only | **REWRITE** — expand to include target international markets |
 | 20 | Platform marquee: Amazon, Flipkart, Meesho, Shopify, Nykaa, JioMart, Etsy, Walmart | index.html | ⚠️ **FLAG** — implies active experience on all | **VERIFY** — Founder must confirm real experience on each, especially Etsy and Walmart |
@@ -97,3 +97,4 @@ Before publishing any statistics, proof elements or biographical claims, the fou
 ---
 
 *Audit complete. No fabricated numbers have been added to this document. All recommendations are based on what was actually found in the codebase.*
+
