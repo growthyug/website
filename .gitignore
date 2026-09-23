@@ -1,0 +1,12 @@
+# Environment / secrets — never commit real credentials
+.env
+digital/n8n/.env
+growthyug-secure/
+
+# The protected product ZIP ships to the server directly, not via git,
+# so a stray copy inside the repo is never committed either.
+digital/n8n/_secure_products/*.zip
+
+# OS / editor noise
+.DS_Store
+Thumbs.db

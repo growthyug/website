@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NSZMF6L3');</script>
+<!-- End Google Tag Manager -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact Growthyug — Book a Growth Call</title>
 <meta name="description" content="Get in touch with Growthyug to book a growth call, request an ecommerce growth audit, or get a proposal for marketplace, paid ads, SEO, website or automation work.">
 <link rel="canonical" href="https://www.growthyug.in/contact/">
+<meta property="og:image" content="https://www.growthyug.in/assets/img/og-image.jpg">
+<meta name="twitter:image" content="https://www.growthyug.in/assets/img/og-image.jpg">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Contact Growthyug — Book a Growth Call">
 <meta property="og:description" content="Get in touch with Growthyug to book a growth call, request an ecommerce growth audit, or get a proposal for marketplace, paid ads, SEO, website or automation work.">
@@ -19,12 +24,16 @@
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/icon-192.png">
 <meta name="theme-color" content="#0B2545">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="/assets/css/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.growthyug.in/"}, {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://www.growthyug.in"}]}</script>
-
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.growthyug.in/"}, {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://www.growthyug.in/contact/"}]}</script>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSZMF6L3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <canvas id="particle-canvas"></canvas>
 
 <nav class="site-nav" id="site-nav">
@@ -74,6 +83,43 @@
         <div class="form-field"><label for="email">Work Email</label><input type="email" id="email" name="email" required></div>
         <div class="form-field"><label for="company">Business / Brand Name</label><input type="text" id="company" name="company"></div>
         <div class="form-field"><label for="website">Website / Store URL</label><input type="url" id="website" name="website"></div>
+        <div class="form-field">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="">Select country</option>
+            <option>India</option>
+            <option>United States</option>
+            <option>United Kingdom</option>
+            <option>UAE</option>
+            <option>Australia</option>
+            <option>Canada</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="revenue">Monthly Revenue (approx.)</label>
+          <select id="revenue" name="monthly_revenue">
+            <option value="">Select range</option>
+            <option>Under ₹5L / $5K</option>
+            <option>₹5L–₹25L / $5K–$30K</option>
+            <option>₹25L–₹1Cr / $30K–$120K</option>
+            <option>₹1Cr–₹5Cr / $120K–$600K</option>
+            <option>Above ₹5Cr / $600K+</option>
+            <option>Prefer not to say</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="adspend">Monthly Ad Spend (approx.)</label>
+          <select id="adspend" name="monthly_ad_spend">
+            <option value="">Select range</option>
+            <option>Not running ads yet</option>
+            <option>Under ₹50K / $600</option>
+            <option>₹50K–₹2L / $600–$2.5K</option>
+            <option>₹2L–₹10L / $2.5K–$12K</option>
+            <option>₹10L+ / $12K+</option>
+            <option>Prefer not to say</option>
+          </select>
+        </div>
         <div class="form-field full">
           <label for="interest">What do you need help with?</label>
           <select id="interest" name="interest">
@@ -86,7 +132,7 @@
             <option>Not sure yet &mdash; need a general audit</option>
           </select>
         </div>
-        <div class="form-field full"><label for="message">Tell us about your business</label><textarea id="message" name="message" rows="5"></textarea></div>
+        <div class="form-field full"><label for="message">Tell us about your business and biggest growth challenge</label><textarea id="message" name="message" rows="5" placeholder="e.g. We sell on Amazon and Shopify, doing ₹30L/month but our ROAS on Meta has dropped and we want to scale marketplace revenue..."></textarea></div>
       </div>
       <div class="form-submit"><button type="submit" class="btn-primary" style="border:none;cursor:pointer">Request a Proposal &rarr;</button></div>
     </form>
