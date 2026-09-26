@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" fill="none">
+  <defs>
+    <linearGradient id="gyPrimary" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="50%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#00F0FF"/>
+    </linearGradient>
+    <linearGradient id="gyCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left Upward Growth Pillar -->
+  <path d="M 6 32 L 6 18 L 13 12 L 13 32 Z" fill="url(#gyPrimary)"/>
+  
+  <!-- Middle Higher Pillar -->
+  <path d="M 16 32 L 16 12 L 23 6 L 23 32 Z" fill="url(#gyPrimary)"/>
+  
+  <!-- Right Apex Pillar with Arrow Top -->
+  <path d="M 26 32 L 26 6 L 33 0 L 33 32 Z" fill="url(#gyCyan)"/>
+
+  <!-- Dynamic Diagonal Ascending Accent Bar -->
+  <polygon points="4,34 35,6 36,9 5,37" fill="#00F0FF" opacity="0.9"/>
+  <circle cx="34" cy="4" r="2.5" fill="#00F0FF"/>
+</svg>
