@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Legacy Shopify URL redirects (301)
+Redirect 301 /pages/privacy-policy /privacy-policy/
+Redirect 301 /pages/contact /contact/
+Redirect 301 /pages/terms-conditions /terms-conditions/
+Redirect 301 /blogs/amazon/amazon-growth-isn-t-about-traffic-it-s-about-momentum /services/marketplace-management/amazon/
+Redirect 301 /blogs/amazon /services/marketplace-management/amazon/
+Redirect 301 /b /
