@@ -71,17 +71,23 @@
 </section>
 <section style="padding-top:0">
   <div class="container two-col">
-    <form class="reveal" action="https://formsubmit.co/hello@growthyug.in" method="POST">
+    <div class="card reveal" id="form-success-msg" style="display:none;padding:32px">
+      <div class="corner-tl"></div><div class="corner-br"></div>
+      <div class="section-label">Message Sent</div>
+      <h3 style="margin-top:8px">Thanks &mdash; we've got your details.</h3>
+      <p style="margin-top:12px">We typically respond within 1-2 business days with next steps for a growth audit or proposal. In the meantime, feel free to <a href="https://wa.me/919329441079" target="_blank" rel="noopener" style="color:var(--neon-green)">reach us on WhatsApp</a>.</p>
+    </div>
+    <form class="reveal" id="contact-form" action="https://formsubmit.co/hello@growthyug.in" method="POST">
       <input type="hidden" name="_subject" value="New Proposal Request — GrowthYug Website">
       <input type="hidden" name="_template" value="table">
       <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://growthyug.in/contact/?sent=1">
+      <input type="hidden" name="_next" value="https://www.growthyug.in/contact/?sent=1">
       <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <div class="form-grid two">
         <div class="form-field"><label for="name">Name</label><input type="text" id="name" name="name" required></div>
         <div class="form-field"><label for="email">Work Email</label><input type="email" id="email" name="email" required></div>
         <div class="form-field"><label for="company">Business / Brand Name</label><input type="text" id="company" name="company"></div>
-        <div class="form-field"><label for="website">Website / Store URL</label><input type="url" id="website" name="website"></div>
+        <div class="form-field"><label for="website">Website / Store URL</label><input type="text" id="website" name="website" placeholder="yourstore.com"></div>
         <div class="form-field">
           <label for="country">Country</label>
           <select id="country" name="country">
@@ -201,6 +207,18 @@
   </svg>
 </a>
 <script src="/assets/js/main.js"></script>
+<script>
+(function () {
+  if (new URLSearchParams(window.location.search).get('sent') === '1') {
+    var form = document.getElementById('contact-form');
+    var success = document.getElementById('form-success-msg');
+    if (form) form.style.display = 'none';
+    if (success) success.style.display = 'block';
+    if (success) success.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    history.replaceState(null, '', window.location.pathname);
+  }
+})();
+</script>
 </body>
 </html>
 
