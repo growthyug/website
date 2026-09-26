@@ -57,12 +57,23 @@ nav.site-nav {
 }
 nav.site-nav.scrolled { background: rgba(2,4,8,0.94); }
 .nav-inner { max-width: 1280px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
-.logo, .footer-logo { font-family: 'Poppins', sans-serif; font-size: 1.35rem; font-weight: 800; text-decoration: none;
-  display: inline-flex; align-items: center; gap: 10px; color: #ffffff; letter-spacing: -0.3px; }
-.logo:hover, .footer-logo:hover { color: #ffffff; }
+.logo, .footer-logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff !important;
+  letter-spacing: -0.3px;
+  -webkit-text-fill-color: initial !important;
+  background: none !important;
+}
+.logo:hover, .footer-logo:hover { color: #ffffff !important; }
 .logo-icon, .footer-logo .logo-icon { display: block; flex-shrink: 0; width: 32px; height: 32px; filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.35)); }
-.logo-text, .footer-logo .logo-text { font-family: 'Poppins', sans-serif; font-size: 1.35rem; font-weight: 800; color: #ffffff; letter-spacing: -0.3px; }
-.logo-accent, .footer-logo .logo-accent { color: var(--neon-cyan); }
+.logo-text, .footer-logo .logo-text { font-family: 'Poppins', sans-serif; font-size: 1.35rem; font-weight: 800; color: #ffffff !important; -webkit-text-fill-color: #ffffff !important; background: none !important; letter-spacing: -0.3px; }
+.logo-accent, .footer-logo .logo-accent { color: #00F0FF !important; -webkit-text-fill-color: #00F0FF !important; background: none !important; }
 
 .nav-links { display: none; list-style: none; gap: 28px; align-items: center; }
 .nav-links > li { position: relative; padding: 10px 0; }
