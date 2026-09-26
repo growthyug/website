@@ -1,5 +1,9 @@
 RewriteEngine On
 
+# Canonical host: force non-www apex to www (matches rel=canonical, sitemap and schema everywhere on the site)
+RewriteCond %{HTTP_HOST} ^growthyug\.in$ [NC]
+RewriteRule ^(.*)$ https://www.growthyug.in/$1 [R=301,L]
+
 # Legacy Shopify URL redirects (301)
 Redirect 301 /pages/privacy-policy /privacy-policy/
 Redirect 301 /pages/contact /contact/
