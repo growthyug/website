@@ -79,13 +79,7 @@
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.growthyug.in/services/seo/shopify-seo/</loc>
-    <lastmod>2026-09-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.growthyug.in/services/seo/amazon-seo/</loc>
+    <loc>https://www.growthyug.in/services/seo/ecommerce-seo/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -101,6 +95,12 @@
     <lastmod>2026-09-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.growthyug.in/services/website-cro/shopify-development/</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.growthyug.in/services/automation/</loc>
