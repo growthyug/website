@@ -57,14 +57,12 @@ nav.site-nav {
 }
 nav.site-nav.scrolled { background: rgba(2,4,8,0.94); }
 .nav-inner { max-width: 1280px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
-.logo { font-family: 'Poppins', sans-serif; font-size: 1.35rem; font-weight: 800; text-decoration: none;
+.logo, .footer-logo { font-family: 'Poppins', sans-serif; font-size: 1.35rem; font-weight: 800; text-decoration: none;
   display: inline-flex; align-items: center; gap: 10px; color: #ffffff; letter-spacing: -0.3px; }
-.logo:hover { color: #ffffff; }
-.logo-icon { display: block; flex-shrink: 0; width: 32px; height: 32px; filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.35)); }
-.logo-text { font-family: 'Poppins', sans-serif; font-size: 1.35rem; font-weight: 800; color: #ffffff; letter-spacing: -0.3px; }
-.logo-accent { color: var(--neon-cyan); }
-.footer-logo { font-family: 'Poppins', sans-serif; font-size: 1.25rem; font-weight: 800; display: inline-flex; align-items: center; gap: 10px; color: #ffffff; }
-.footer-logo .logo-icon { width: 28px; height: 28px; }
+.logo:hover, .footer-logo:hover { color: #ffffff; }
+.logo-icon, .footer-logo .logo-icon { display: block; flex-shrink: 0; width: 32px; height: 32px; filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.35)); }
+.logo-text, .footer-logo .logo-text { font-family: 'Poppins', sans-serif; font-size: 1.35rem; font-weight: 800; color: #ffffff; letter-spacing: -0.3px; }
+.logo-accent, .footer-logo .logo-accent { color: var(--neon-cyan); }
 
 .nav-links { display: none; list-style: none; gap: 28px; align-items: center; }
 .nav-links > li { position: relative; padding: 10px 0; }
@@ -230,8 +228,6 @@ footer.site-footer { padding: 56px 0 32px; border-top: 1px solid var(--glass-bor
 .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
 .footer-col a { font-size: 0.85rem; color: var(--text-secondary); text-decoration: none; }
 .footer-col a:hover { color: var(--neon-cyan); }
-.footer-logo { font-family: 'Poppins', sans-serif; font-size: 1.1rem; font-weight: 900; display: flex; align-items: center; gap: 8px; }
-.footer-logo span { background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; padding-top: 24px; border-top: 1px solid var(--glass-border); font-size: 0.78rem; color: var(--text-secondary); }
 
 /* ── UTIL ── */
