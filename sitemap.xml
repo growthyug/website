@@ -175,6 +175,18 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://www.growthyug.in/resources/cac-calculator/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.growthyug.in/resources/contribution-margin-calculator/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.growthyug.in/insights/</loc>
     <lastmod>2026-09-24</lastmod>
     <changefreq>daily</changefreq>
@@ -237,6 +249,24 @@
   <url>
     <loc>https://www.growthyug.in/insights/ecommerce-marketing-2026-trends/</loc>
     <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.growthyug.in/insights/ecommerce-marketing-agency-pricing/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.growthyug.in/insights/amazon-vs-flipkart-d2c-brands/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.growthyug.in/insights/meta-ads-roas-drop-diagnostic/</loc>
+    <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

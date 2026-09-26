@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NSZMF6L3');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ecommerce Contribution Margin (CM1/CM2/CM3) Calculator — GrowthYug</title>
+<meta name="description" content="Free per-order contribution margin calculator for ecommerce. See CM1, CM2 and CM3 after COGS, fulfillment, returns and marketing cost — not just platform ROAS.">
+<link rel="canonical" href="https://www.growthyug.in/resources/contribution-margin-calculator/">
+<meta property="og:image" content="https://www.growthyug.in/assets/img/og-image.jpg">
+<meta name="twitter:image" content="https://www.growthyug.in/assets/img/og-image.jpg">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ecommerce Contribution Margin (CM1/CM2/CM3) Calculator — GrowthYug">
+<meta property="og:description" content="Free per-order contribution margin calculator for ecommerce. See CM1, CM2 and CM3 after COGS, fulfillment, returns and marketing cost.">
+<meta property="og:url" content="https://www.growthyug.in/resources/contribution-margin-calculator/">
+<meta property="og:site_name" content="GrowthYug">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ecommerce Contribution Margin (CM1/CM2/CM3) Calculator — GrowthYug">
+<meta name="twitter:description" content="Free per-order contribution margin calculator for ecommerce. See CM1, CM2 and CM3 after COGS, fulfillment, returns and marketing cost.">
+<link rel="icon" href="/assets/img/favicon.ico" sizes="any">
+<link rel="icon" href="/assets/img/logo-icon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/icon-192.png">
+<meta name="theme-color" content="#0B2545">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="/assets/css/style.css?v=20260927a">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.growthyug.in/"}, {"@type": "ListItem", "position": 2, "name": "Resources", "item": "https://www.growthyug.in/resources/"}, {"@type": "ListItem", "position": 3, "name": "Contribution Margin Calculator", "item": "https://www.growthyug.in/resources/contribution-margin-calculator/"}]}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Ecommerce Contribution Margin (CM1/CM2/CM3) Calculator",
+  "operatingSystem": "All",
+  "applicationCategory": "BusinessApplication",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "publisher": { "@type": "Organization", "name": "GrowthYug Digital Pvt. Ltd.", "url": "https://www.growthyug.in/" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between CM1, CM2 and CM3?",
+      "acceptedAnswer": { "@type": "Answer", "text": "CM1 is revenue minus product COGS. CM2 subtracts shipping, payment gateway fees and return/RTO costs from CM1 — it's your margin after fulfillment. CM3 subtracts marketing cost per order from CM2 — it's what's actually left after acquiring and fulfilling the order, the real per-order profit." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a healthy CM3 for an ecommerce brand?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A CM3 of 15% to 25% of revenue is generally considered a sustainable scaling range. A brand can show a strong platform ROAS and still have a negative CM3 once product cost, fulfillment, returns and marketing are all accounted for." }
+    }
+  ]
+}
+</script>
+<style>
+.calc-card { background: var(--bg-card); border: 1px solid var(--border-glow); border-radius: var(--radius-lg); padding: 36px; margin-bottom: 48px; box-shadow: 0 16px 40px rgba(0,0,0,0.4); }
+.calc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 24px; }
+.calc-field label { display: block; font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 6px; }
+.calc-field input { width: 100%; padding: 12px 14px; background: rgba(11, 37, 69, 0.6); border: 1px solid var(--border); border-radius: var(--radius-sm); color: #fff; font-family: var(--font-body); font-size: 0.95rem; outline: none; transition: var(--transition-fast); }
+.calc-field input:focus { border-color: var(--neon-cyan); box-shadow: 0 0 12px rgba(0, 240, 255, 0.25); }
+.calc-results { background: rgba(0, 240, 255, 0.04); border: 1px solid rgba(0, 240, 255, 0.2); border-radius: var(--radius-md); padding: 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; margin-top: 28px; }
+.res-box .res-label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); }
+.res-box .res-val { font-size: 1.6rem; font-weight: 700; color: var(--neon-cyan); font-family: var(--font-heading); margin-top: 4px; }
+.res-box .res-status { font-size: 0.8rem; margin-top: 4px; color: var(--neon-green); }
+.article-body { max-width: 860px; margin: 0 auto; font-size: 1rem; line-height: 1.8; color: var(--text-secondary); }
+.article-body h2 { font-size: 1.6rem; color: #fff; margin-top: 40px; margin-bottom: 16px; }
+.article-body h3 { font-size: 1.25rem; color: #fff; margin-top: 28px; margin-bottom: 12px; }
+.formula-box { background: rgba(5,13,26,0.8); border: 1px solid var(--border); border-left: 4px solid var(--neon-cyan); padding: 20px; border-radius: var(--radius-sm); margin: 24px 0; color: #fff; font-family: monospace; font-size: 0.95rem; }
+.waterfall { display: flex; flex-direction: column; gap: 2px; margin: 24px 0; }
+.waterfall-row { display: flex; justify-content: space-between; padding: 12px 18px; background: rgba(11,37,69,0.5); border-left: 4px solid var(--border); font-size: 0.92rem; }
+.waterfall-row.total { border-left-color: var(--neon-cyan); font-weight: 700; color: #fff; }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSZMF6L3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><canvas id="particle-canvas"></canvas>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<nav class="site-nav" id="site-nav">
+  <div class="nav-inner">
+    <a href="/" class="logo"><img src="/assets/img/logo-icon.svg" alt="GrowthYug" class="logo-icon" width="32" height="32"><span class="logo-text">Growth<span class="logo-accent">Yug</span></span></a>
+    <ul class="nav-links">
+      <li><a href="/services/">Services</a><div class="nav-dropdown"><a href="/services/ecommerce-growth/"><strong>Ecommerce Growth Strategy</strong><small>Full-funnel growth planning across channels</small></a><a href="/services/marketplace-management/"><strong>Marketplace Management</strong><small>Amazon, Flipkart &amp; marketplace operations</small></a><a href="/services/paid-advertising/"><strong>Paid Advertising</strong><small>Meta, Google &amp; marketplace ad management</small></a><a href="/services/seo/"><strong>SEO</strong><small>Ecommerce &amp; technical search visibility</small></a><a href="/services/website-cro/"><strong>Website &amp; CRO</strong><small>Shopify builds &amp; conversion optimization</small></a><a href="/services/automation/"><strong>Automation &amp; Analytics</strong><small>Reporting, dashboards &amp; workflow automation</small></a><a href="/services/fractional-cmo/"><strong>Fractional CMO</strong><small>Executive ecommerce growth leadership</small></a></div></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/case-studies/">Case Studies</a></li>
+      <li><a href="/insights/">Insights</a></li>
+      <li><a href="/resources/" class="active">Resources</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+    <a href="/contact/" class="nav-cta"><span>Book a Growth Call</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobile-nav">
+    <ul>
+      <li><a href="/services/">Services</a></li>
+      <li class="sub-list"><ul><li><a href="/services/ecommerce-growth/">Ecommerce Growth Strategy</a></li><li><a href="/services/marketplace-management/">Marketplace Management</a></li><li><a href="/services/paid-advertising/">Paid Advertising</a></li><li><a href="/services/seo/">SEO</a></li><li><a href="/services/website-cro/">Website &amp; CRO</a></li><li><a href="/services/automation/">Automation &amp; Analytics</a></li><li><a href="/services/fractional-cmo/">Fractional CMO</a></li></ul></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/case-studies/">Case Studies</a></li>
+      <li><a href="/insights/">Insights</a></li>
+      <li><a href="/resources/">Resources</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul></div>
+
+<section class="page-hero" id="main-content">
+  <div class="grid-bg"></div>
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">/</span><a href="/resources/">Resources</a><span class="sep">/</span><span>Contribution Margin Calculator</span></nav>
+    <div class="hero-label">Interactive Financial Model</div>
+    <h1>Contribution Margin<br><span class="accent">CM1 / CM2 / CM3 Calculator</span></h1>
+    <p class="hero-sub">See what's actually left per order after product cost, fulfillment, returns and marketing — not just the ROAS your ad platform reports.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="container">
+    <div class="calc-card reveal">
+      <div class="section-label">Live Calculator</div>
+      <h2 style="font-size:1.6rem;margin-bottom:8px">Model Your Per-Order Profitability</h2>
+      <p style="font-size:0.92rem;color:var(--text-secondary)">Enter your order economics to see the CM1 → CM2 → CM3 waterfall.</p>
+
+      <div class="calc-grid">
+        <div class="calc-field">
+          <label for="calc-aov">Average Order Value (AOV)</label>
+          <input type="number" id="calc-aov" value="1800" min="1" step="50">
+        </div>
+        <div class="calc-field">
+          <label for="calc-cogs">Product COGS (% of AOV)</label>
+          <input type="number" id="calc-cogs" value="30" min="0" max="100" step="1">
+        </div>
+        <div class="calc-field">
+          <label for="calc-ship">Shipping &amp; Fulfillment (% of AOV)</label>
+          <input type="number" id="calc-ship" value="10" min="0" max="100" step="1">
+        </div>
+        <div class="calc-field">
+          <label for="calc-gateway">Payment Gateway Fee (% of AOV)</label>
+          <input type="number" id="calc-gateway" value="2" min="0" max="100" step="0.5">
+        </div>
+        <div class="calc-field">
+          <label for="calc-returns">Returns / RTO Cost Impact (% of AOV)</label>
+          <input type="number" id="calc-returns" value="6" min="0" max="100" step="1">
+        </div>
+        <div class="calc-field">
+          <label for="calc-marketing">Marketing Cost per Order (₹)</label>
+          <input type="number" id="calc-marketing" value="250" min="0" step="10">
+        </div>
+      </div>
+
+      <div class="waterfall" id="calc-waterfall">
+        <div class="waterfall-row total"><span>Revenue (AOV)</span><span id="wf-aov">₹1,800</span></div>
+        <div class="waterfall-row"><span>&minus; Product COGS</span><span id="wf-cogs">&minus;₹540</span></div>
+        <div class="waterfall-row total"><span>= CM1 (Gross Margin)</span><span id="wf-cm1">₹1,260</span></div>
+        <div class="waterfall-row"><span>&minus; Shipping &amp; Fulfillment</span><span id="wf-ship">&minus;₹180</span></div>
+        <div class="waterfall-row"><span>&minus; Payment Gateway</span><span id="wf-gateway">&minus;₹36</span></div>
+        <div class="waterfall-row"><span>&minus; Returns / RTO Impact</span><span id="wf-returns">&minus;₹108</span></div>
+        <div class="waterfall-row total"><span>= CM2 (After Fulfillment)</span><span id="wf-cm2">₹936</span></div>
+        <div class="waterfall-row"><span>&minus; Marketing Cost per Order</span><span id="wf-marketing">&minus;₹250</span></div>
+        <div class="waterfall-row total"><span>= CM3 (Real Per-Order Profit)</span><span id="wf-cm3">₹686</span></div>
+      </div>
+
+      <div class="calc-results" id="calc-output">
+        <div class="res-box">
+          <div class="res-label">CM1 %</div>
+          <div class="res-val" id="res-cm1-pct">70.0%</div>
+          <div class="res-status">Gross margin after COGS</div>
+        </div>
+        <div class="res-box">
+          <div class="res-label">CM2 %</div>
+          <div class="res-val" id="res-cm2-pct">52.0%</div>
+          <div class="res-status">After fulfillment &amp; returns</div>
+        </div>
+        <div class="res-box">
+          <div class="res-label">CM3 %</div>
+          <div class="res-val" id="res-cm3-pct">38.1%</div>
+          <div class="res-status" id="res-cm3-status">Real per-order profit margin</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="article-body reveal">
+      <h2>Why CM3, Not Just ROAS</h2>
+      <p>A campaign can show a strong 3.5x ROAS in Ads Manager and still lose money once product cost, shipping, gateway fees, returns and marketing spend are all accounted for. Contribution Margin strips that illusion out, layer by layer.</p>
+
+      <h3>CM1 — Gross Margin</h3>
+      <div class="formula-box">CM1 = Revenue &minus; Product COGS</div>
+
+      <h3>CM2 — After Fulfillment</h3>
+      <div class="formula-box">CM2 = CM1 &minus; Shipping &minus; Payment Gateway Fees &minus; Returns/RTO Cost</div>
+
+      <h3>CM3 — Real Per-Order Profit</h3>
+      <div class="formula-box">CM3 = CM2 &minus; Marketing Cost per Order</div>
+      <p>CM3 is the number that should decide whether to scale a channel, not platform ROAS alone. For a full walkthrough of blended CAC and how it feeds the marketing cost line here, see our <a href="/insights/ecommerce-customer-acquisition-cost-cac/">Ecommerce CAC Playbook</a> or model acquisition cost first with the <a href="/resources/cac-calculator/">CAC &amp; LTV:CAC Calculator</a>.</p>
+
+      <div class="card reveal" style="padding:36px;margin-top:40px;background:linear-gradient(135deg, rgba(11,37,69,0.8) 0%, rgba(0,240,255,0.06) 100%);border:1px solid var(--border-glow);text-align:center">
+        <div class="section-label center">Next Step</div>
+        <h2 style="font-size:1.6rem;margin-bottom:12px">Want Your Full Channel-by-Channel CM3 Modeled?</h2>
+        <p style="margin-bottom:24px">We build complete unit economics P&amp;L models across every channel and SKU for D2C brands scaling past ₹5L/mo.</p>
+        <a href="/contact/" class="btn-primary">Book A Free Growth Diagnostic &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a href="/" class="footer-logo"><img src="/assets/img/logo-icon.svg" alt="GrowthYug" class="logo-icon" width="32" height="32"><span class="logo-text">Growth<span class="logo-accent">Yug</span></span></a>
+        <p style="margin-top:10px;font-size:0.85rem;max-width:280px">A full-service ecommerce growth partner helping brands acquire customers, grow marketplaces, improve conversion and build scalable digital sales systems.</p>
+        <p style="margin-top:16px;font-size:0.8rem"><a href="https://wa.me/919329441079" target="_blank" rel="noopener" style="color:var(--neon-green)">WhatsApp &rarr; Chat with Us</a></p>
+        <p style="margin-top:4px;font-size:0.8rem"><a href="mailto:hello@growthyug.in" style="color:var(--text-secondary)">hello@growthyug.in</a></p>
+        <p style="margin-top:4px;font-size:0.8rem;color:var(--text-secondary)">C-323, Silver Spring Phase 1, Indore, MP 452020</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul><li><a href="/services/ecommerce-growth/">Ecommerce Growth Strategy</a></li><li><a href="/services/marketplace-management/">Marketplace Management</a></li><li><a href="/services/paid-advertising/">Paid Advertising</a></li><li><a href="/services/seo/">SEO</a></li><li><a href="/services/website-cro/">Website &amp; CRO</a></li><li><a href="/services/automation/">Automation &amp; Analytics</a></li><li><a href="/services/fractional-cmo/">Fractional CMO</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/case-studies/">Case Studies</a></li>
+          <li><a href="/insights/">Insights</a></li>
+          <li><a href="/resources/">Resources</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get Started</h4>
+        <ul>
+          <li><a href="/contact/">Book a Growth Call</a></li>
+          <li><a href="/contact/">Request a Proposal</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 GrowthYug Digital Pvt. Ltd. All rights reserved.</div>
+      <div>Ecommerce Growth Partner</div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919329441079" class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Chat with GrowthYug on WhatsApp" title="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+    <path d="M16 4C9.4 4 4 9.4 4 16c0 2.2.6 4.3 1.7 6.2L4 28l5.9-1.6c1.8 1 3.9 1.6 6.1 1.6 6.6 0 12-5.4 12-12S22.6 4 16 4z" fill="none" stroke="white" stroke-width="1.6" stroke-linejoin="round"/>
+    <path d="M11.4 10.8c.3-.6.6-.6.9-.6h.7c.2 0 .5 0 .7.6.3.7.9 2.3 1 2.5.1.2.1.4 0 .6-.1.2-.2.4-.4.6-.2.2-.4.4-.5.6-.2.2-.4.4-.2.8.2.4 1 1.6 2.1 2.6 1.4 1.3 2.6 1.7 3 1.9.4.2.6.1.8-.1.2-.2.9-1 1.1-1.4.2-.4.4-.3.7-.2.3.1 2 1 2.4 1.1.4.2.6.3.7.4.1.2.1 1-.3 1.9-.4.9-2 1.7-2.8 1.8-.7.1-1.6.2-5.1-1.1-4.1-1.7-6.7-5.9-6.9-6.2-.2-.3-1.6-2.2-1.6-4.2 0-2 1-2.9 1.4-3.3z" fill="white"/>
+  </svg>
+</a>
+<script src="/assets/js/main.js"></script>
+<script>
+(function() {
+  function fmt(n) {
+    const sign = n < 0 ? '−' : '';
+    return sign + '₹' + Math.abs(Math.round(n)).toLocaleString('en-IN');
+  }
+  function recalculate() {
+    const aov = parseFloat(document.getElementById('calc-aov').value) || 0;
+    const cogsPct = (parseFloat(document.getElementById('calc-cogs').value) || 0) / 100;
+    const shipPct = (parseFloat(document.getElementById('calc-ship').value) || 0) / 100;
+    const gatewayPct = (parseFloat(document.getElementById('calc-gateway').value) || 0) / 100;
+    const returnsPct = (parseFloat(document.getElementById('calc-returns').value) || 0) / 100;
+    const marketing = parseFloat(document.getElementById('calc-marketing').value) || 0;
+
+    const cogs = aov * cogsPct;
+    const cm1 = aov - cogs;
+    const ship = aov * shipPct;
+    const gateway = aov * gatewayPct;
+    const returns = aov * returnsPct;
+    const cm2 = cm1 - ship - gateway - returns;
+    const cm3 = cm2 - marketing;
+
+    document.getElementById('wf-aov').textContent = fmt(aov);
+    document.getElementById('wf-cogs').textContent = '−' + fmt(cogs).replace('−','');
+    document.getElementById('wf-cm1').textContent = fmt(cm1);
+    document.getElementById('wf-ship').textContent = '−' + fmt(ship).replace('−','');
+    document.getElementById('wf-gateway').textContent = '−' + fmt(gateway).replace('−','');
+    document.getElementById('wf-returns').textContent = '−' + fmt(returns).replace('−','');
+    document.getElementById('wf-cm2').textContent = fmt(cm2);
+    document.getElementById('wf-marketing').textContent = '−' + fmt(marketing).replace('−','');
+    document.getElementById('wf-cm3').textContent = fmt(cm3);
+
+    const cm1Pct = aov > 0 ? (cm1 / aov) * 100 : 0;
+    const cm2Pct = aov > 0 ? (cm2 / aov) * 100 : 0;
+    const cm3Pct = aov > 0 ? (cm3 / aov) * 100 : 0;
+
+    document.getElementById('res-cm1-pct').textContent = cm1Pct.toFixed(1) + '%';
+    document.getElementById('res-cm2-pct').textContent = cm2Pct.toFixed(1) + '%';
+
+    const cm3El = document.getElementById('res-cm3-pct');
+    const statusEl = document.getElementById('res-cm3-status');
+    cm3El.textContent = cm3Pct.toFixed(1) + '%';
+
+    if (cm3Pct < 0) {
+      cm3El.style.color = '#ff4d4d';
+      statusEl.textContent = 'Losing money on every order';
+      statusEl.style.color = '#ff4d4d';
+    } else if (cm3Pct < 15) {
+      cm3El.style.color = 'var(--neon-cyan)';
+      statusEl.textContent = 'Thin — below the 15–25% target range';
+      statusEl.style.color = 'var(--neon-cyan)';
+    } else if (cm3Pct <= 25) {
+      cm3El.style.color = 'var(--neon-green)';
+      statusEl.textContent = 'Healthy — within the sustainable range';
+      statusEl.style.color = 'var(--neon-green)';
+    } else {
+      cm3El.style.color = 'var(--neon-green)';
+      statusEl.textContent = 'Strong — room to reinvest in growth';
+      statusEl.style.color = 'var(--neon-green)';
+    }
+  }
+
+  ['calc-aov','calc-cogs','calc-ship','calc-gateway','calc-returns','calc-marketing'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('input', recalculate);
+  });
+  recalculate();
+})();
+</script>
+</body>
+</html>
